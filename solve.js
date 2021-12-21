@@ -1,4 +1,4 @@
-let input = require("fs").readFileSync("input", 'utf-8').split(/\r?\n/);
+let input = require("fs").readFileSync("input_day_one", 'utf-8').split(/\r?\n/);
 input = input.map(Number);
 
 const day_one = () => {
