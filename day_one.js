@@ -14,14 +14,24 @@ const day_one = () => {
         }
     }
 
-    return count;
+    console.log("part A: " + count);
 }
 
-let res = day_one(); // Execute part A
+day_one(); // Execute part A
 
 
 const partB = () => {
+    let count = 0;
 
+    for (let i = 3; i < input.length; i++) {
+        let el = input[i - 3] + input[i - 2] + input[i - 1];
+        let n = input[i - 2] + input[i - 1] + input[i];
+
+        if(el < n) ++count;
+        
+    }
+
+    console.log("part B: " + count);
 }
 
 partB(); // Execute part B
